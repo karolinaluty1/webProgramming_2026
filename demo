@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="hello">
+  <title>Document</title>
+</head>
+<body>
+    <!--  -->
+    <h1>My Homepage</h1>
+
+    <h2>Sub Headers</h2>
+    <h3>Another </h3>
+    <h4>my name is Karolina this is my portfolo project</h4>
+
+    <p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus blanditiis temporibus cumque perferendis quo, officia qui laudantium, odio soluta maiores tempore at magnam corporis ut! Voluptate similique aspernatur laboriosam debitis!
+        We can have content</p>
+
+    
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, voluptate maxime dignissimos magni dolor quia inventore reprehenderit, omnis excepturi corrupti quos iusto, eligendi optio saepe voluptatibus velit voluptas odit itaque.</p>
+
+        <p>lorem</p>
+        <p>lorem</p>
+        <p>lorem</p>
+    <ul>
+        <li<a href="asignment1.html">assignment1/li>
+        <li>task</li>
+        <li>task2</li>
+        <li></li>
+    </ul>
+
+git config --global user.name "karolinaluty1"
+git config --global user.email "karolina.luty2005@gmail.com"
+
+</body>
+</html>
+
+  
