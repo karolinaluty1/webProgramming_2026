@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karolina Luty - Web Programming</title>
+    <style>
+
+        body {
+            background-color: bisque;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #222;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: brown;
+            color: aliceblue;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        header .logo {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: aliceblue;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: opacity 0.2s;
+        }
+
+        nav ul li a:hover {
+            opacity: 0.75;
+            text-decoration: underline;
+        }
+
+        
+        main {
+            width: 80%;
+            max-width: 1000px;
+            background-color: rgb(198, 129, 183);
+            margin: 40px auto;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            flex: 1;
+        }
+
+        h1 {
+            margin-top: 0;
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+            padding-bottom: 10px;
+        }
+
+        section {
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        
+        .placeholder {
+            width: 100%;
+            min-height: 350px;
+            border-radius: 15px;
+            background-color: #111;
+            margin: 20px 0;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .placeholder img,
+        .placeholder iframe {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        
+        #assignment ul {
+            padding-left: 20px;
+        }
+
+        #assignment ul li {
+            margin-bottom: 8px;
+        }
+
+        main a {
+            color: aliceblue;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        main a:hover {
+            text-decoration: underline;
+        }
+
+        /* Stopka */
+        footer {
+            background-color: brown;
+            color: aliceblue;
+            text-align: center;
+            padding: 15px;
+            margin-top: auto;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Hello, this is my page</div>
+        <nav>
+            <ul>
+                <li><a href="#proposal">Proposal</a></li>
+                <li><a href="#assignment">Assignments</a></li>
+                <li><a href="#demo">Demo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>This is my website</h1>
+        <p><b>Hello!</b> <i>This is my page.</i></p>
+
+        <section id="proposal">
+            <h2>Proposal</h2>
+            <div class="placeholder">
+                <img src="webProgramming_2026/images/skincare-routine.webp" alt="This is an image of multiple cosmetics">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ORqe0EJU_Sk?si=O7RM70igODDMgpRE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="assignment">
+            <h2>Assignments</h2>
+            <ul>
+                <li><a href="assignment1.html">Assignment 1</a></li>
+                <li><a href="#">Assignment 2</a></li>
+                <li><a href="#">Assignment 3</a></li>
+                <li><a href="https://github.com/cqx931/webProgramming_2026" target="_blank">GitHub repository</a></li>
+            </ul>
+            <p>Please contact me by <a href="mailto:karolina.luty2005@gmail.com">email</a>.</p>
+        </section>
+
+        <section id="demo">
+            <h2>Demo</h2>
+            <p>Project demo section.</p>
+        </section>
+    </main>
+
+    <footer>
+        Karolina Luty &ndash; Web Programming
+    </footer>
+
+</body>
+</html>

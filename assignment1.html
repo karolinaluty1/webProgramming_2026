@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1 - Final Project Proposal | Karolina Luty</title>
+    
+       <style>
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            background-color: bisque;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', Arial, sans-serif;
+            color: #2b1d1d;
+            line-height: 1.6;
+        }
+
+        
+        header {
+            background-color: brown;
+            color: aliceblue;
+            padding: 1.2rem 2.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header p {
+            margin: 0;
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: aliceblue;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+
+        main {
+            width: 85%;
+            max-width: 960px;
+            background-color: rgb(198, 129, 183);
+            margin: 2.5rem auto;
+            padding: 2.5rem 3rem;
+            border-radius: 16px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+        }
+
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', Georgia, serif;
+            color: #fff;
+            margin-top: 0;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            line-height: 1.2;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.1em; 
+            font-style: italic;
+            color: #fdf2f8;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+            padding-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 1.65rem;
+            margin-bottom: 0.75rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.4rem;
+        }
+
+        p, li {
+            font-size: 1rem;
+        }
+
+        .highlight {
+            font-size: 1.05em;
+            font-weight: 600;
+            background-color: rgba(255, 255, 255, 0.25);
+            padding: 0.15em 0.4em;
+            border-radius: 4px;
+        }
+
+        section {
+            margin-bottom: 2.2rem;
+        }
+
+        article {
+            background-color: rgba(255, 255, 255, 0.18);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-top: 1rem;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 1.2rem;
+        }
+
+        figure {
+            margin: 0;
+            flex: 1 1 280px;
+            background-color: #fff;
+            padding: 0.8rem;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        figure img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 8px;
+            display: block;
+        }
+
+        figcaption {
+            margin-top: 0.6rem;
+            font-size: 0.88rem;
+            color: #4a3535;
+            text-align: center;
+            font-style: italic;
+        }
+
+        aside {
+            background-color: bisque;
+            border-left: 5px solid brown;
+            padding: 1rem 1.5rem;
+            border-radius: 0 10px 10px 0;
+            margin-top: 1.5rem;
+        }
+
+        aside h3 {
+            color: brown;
+            font-size: 1.15rem;
+        }
+
+        footer {
+            background-color: brown;
+            color: aliceblue;
+            text-align: center;
+            padding: 1.2rem;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: bisque;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <p>Karolina Luty &bull; Web Programming</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#concept">Concept</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#visuals">Visuals</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Final Project Proposal: GlowCheck</h1>
+        <p class="subtitle">Skincare Routine Builder &amp; Active Ingredient Compatibility Checker</p>
+
+        <section id="concept">
+            <h2>1. Project Idea &amp; Problem Statement</h2>
+            <p>
+                Many skincare enthusiasts buy popular cosmetic products without knowing how active ingredients interact. 
+                Combining strong actives such as <span class="highlight">Retinol</span> and <span class="highlight">AHA/BHA exfoliating acids</span> 
+                in the same routine can damage the skin barrier.
+            </p>
+            <p>
+                <strong>GlowCheck</strong> will be an interactive web application that helps users build safe morning (AM) and evening (PM) 
+                skincare routines, check ingredient conflicts, and keep track of open product expiration dates.
+            </p>
+        </section>
+
+        <section id="features">
+            <h2>2. Core Planned Features</h2>
+            <article>
+                <h3>What the website will do:</h3>
+                <ul>
+                    <li><strong>Ingredient Conflict Detector:</strong> Select two or more active ingredients (e.g., Vitamin C, Niacinamide, Retinol, Salicylic Acid) to see if they are safe to layer together.</li>
+                    <li><strong>AM / PM Routine Sorter:</strong> Automatically orders selected cosmetics from thinnest to thickest consistency (cleanser &rarr; toner &rarr; serum &rarr; moisturizer &rarr; SPF).</li>
+                    <li><strong>Skin Type Filter:</strong> Highlights formulas tailored for dry, oily, combination, or sensitive skin.</li>
+                </ul>
+            </article>
+
+            <aside>
+                <h3>Target Audience &amp; Scope</h3>
+                <p>
+                    Designed for beginners and skincare hobbyists who want a clean, visual tool instead of searching through complicated dermatology blogs.
+                </p>
+            </aside>
+        </section>
+
+        <section id="visuals">
+            <h2>3. Visual Inspiration &amp; Layout Concepts</h2>
+            <p>Below are two visual references illustrating the product shelf interface and ingredient texture focus:</p>
+            
+            <div class="gallery">
+                <figure>
+                    <img src="images/skincare-routine.webp" alt="Minimalist skincare bottles and serums arranged on a clean surface">
+                    <figcaption>Fig 1. Clean product shelf concept for the AM/PM routine builder.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/serum-texture.webp" alt="Close-up of cosmetic serum dropper showing lightweight texture">
+                    <figcaption>Fig 2. Product texture and active ingredient detail card inspiration.</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        Karolina Luty &ndash; Web Programming 2026 | <a href="mailto:karolina.luty2005@gmail.com">Contact via Email</a>
+    </footer>
+
+</body>
+</html>
