@@ -13,7 +13,7 @@
     <h2>Sub Headers</h2>
     <h3>Another </h3>
     <h4>my name is Karolina this is my portfolo project</h4>
-
+    <h1>This is my website</h1>
     <p>
     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus blanditiis temporibus cumque perferendis quo, officia qui laudantium, odio soluta maiores tempore at magnam corporis ut! Voluptate similique aspernatur laboriosam debitis!
         We can have content</p>
@@ -31,8 +31,7 @@
         <li></li>
     </ul>
 
-git config --global user.name "karolinaluty1"
-git config --global user.email "karolina.luty2005@gmail.com"
+
 
 </body>
 </html>
